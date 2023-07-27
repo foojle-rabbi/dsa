@@ -93,24 +93,24 @@ struct node *searchIter(struct node *root, int key)
     return NULL;
 }
 
-void insertAvalue(struct node *root, int key)
-{
+void insertAvalue(struct node *root, int key){
     struct node *prev = NULL;
-    while (root != NULL)
-    {
-        if (root->data == key)
-        {
+
+    //here there were a mistake that is when you try to insert in a node
+    //its better to not play with root. and create a "current node"
+    struct node* current = root;
+    while (current != NULL){
+        if (current->data == key){
             printf("The value is already exists\n");
             return;
         }
-        prev = root;
-        if (root->data > key)
-        {
-            root = root->left;
+        prev = current;
+
+        if (current->data > key){
+            current = current->left;
         }
-        else
-        {
-            root = root->right;
+        else{
+            current = current->right;
         }
     }
     struct node *new = createNode(key);

@@ -37,6 +37,9 @@ void dfs(){
 int main()
 {
     //DFS means depth first search
+
+    //important notes you cant declare global variabe i and use it to all the function for this 
+    //purticular things. cause if you do the dfs visit function will not call for each nodes
     freopen("input.txt", "r", stdin);
     int i, n1, n2;
 

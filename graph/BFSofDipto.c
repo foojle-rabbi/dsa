@@ -97,6 +97,7 @@ void bfs(int startingNode){
 
 int main()
 {
+    //its not recomended to initialize 'i' as a global variable that can causes error!
     freopen("input2.txt", "r", stdin);
     int n1, n2;
 

@@ -147,6 +147,8 @@ struct node* searchAValue(struct node* head, int key){
 
 int main() 
 {
+    //ekta function re onek vabei implement kora jay! er onek gula implement onnano folder e o ache like practice or codes form mobile
+
     struct node* head = createNode(15);
     display(head);
     
